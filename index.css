@@ -5,7 +5,8 @@ body {
     text-decoration: none; }
   body header {
     position: fixed;
-    width: 100%; }
+    width: 100%;
+    background-color: #4A608C; }
     body header nav.navbar {
       padding: 10px 0px;
       max-width: 80%;
@@ -48,24 +49,26 @@ body {
               -webkit-transition: all 480ms;
               -o-transition: all 480ms;
               transition: all 480ms; }
-  body main.main section:nth-child(even) {
-    background-color: #4D688C; }
-  body main.main section:nth-child(odd) {
-    background-color: #A0B3D9; }
-  body main.main section {
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    body main.main section h1 {
-      font-size: 5em;
-      text-transform: capitalize; }
+  body main.main {
+    padding-top: 50px; }
+    body main.main section:nth-child(even) {
+      background-color: #4D688C; }
+    body main.main section:nth-child(odd) {
+      background-color: #A0B3D9; }
+    body main.main section {
+      height: 100vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      body main.main section h1 {
+        font-size: 5em;
+        text-transform: capitalize; }
 
 html {
   line-height: 1.15;
