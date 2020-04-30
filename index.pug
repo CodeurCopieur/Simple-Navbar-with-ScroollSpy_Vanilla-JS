@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+html(lang="fr")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    //CSS
+    link(rel="stylesheet", href="index.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap")
+
+    title Simple Navbar with ScroollSpy
+  body
+    header
+      nav.navbar
+        h3.logo Codwerk
+        .nav__menu
+          ul.nav__list
+            each val in ['home','about','projets', 'contact']
+                li.nav__item
+                  a.nav_link(href='#'+val)= val
+      
+    main.main
+      each val in ['home','about','projets', 'contact']
+        section(id=val)
+          h1=val
+      
+
+    script(src="index.js")

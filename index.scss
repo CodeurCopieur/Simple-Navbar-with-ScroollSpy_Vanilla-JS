@@ -1,0 +1,91 @@
+/* Color Theme Swatches in Hex */
+$air--water-1-hex: #D8C5D9;
+$air--water-2-hex: #4A608C;
+$air--water-3-hex: #2F3D59;
+$air--water-4-hex: #A0B3D9;
+$air--water-5-hex: #4D688C;
+
+
+body {
+      font-family: 'Raleway', sans-serif;
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      
+      position: fixed;
+      width: 100%;
+      //navbar
+      nav.navbar {
+        padding: 10px 0px;
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+
+        .logo {
+          font-size: 1.2rem;
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+        .nav__list  {
+          display: flex;
+          align-items: center;
+
+          .nav__item {
+
+            margin: 5px 15px;
+            white-space: nowrap;
+
+            .nav_link {
+              display: inline-block;
+              text-transform: capitalize;
+              color: #fff;
+              font-size: 1.2rem;
+              font-weight: 600;
+              transition: all 480ms;
+
+              &:hover, &.active {
+                color: $air--water-3-hex;
+                transition: all 480ms;
+              }
+
+            }
+          }
+        }
+      }
+    }
+
+    //main
+    main.main {
+
+      $home: #2F3D59;
+      $about: #A0B3D9;
+      section:nth-child(even) {
+        background-color: $air--water-5-hex;
+      }
+      section:nth-child(odd) {
+        background-color: $air--water-4-hex;
+      }
+      section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+          font-size: 5em;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+}
+
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{-webkit-box-sizing:border-box;box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+
+html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:400}ul{list-style:none}button,input,select,textarea{margin:0}html{-webkit-box-sizing:border-box;box-sizing:border-box}*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}
